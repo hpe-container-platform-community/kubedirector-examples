@@ -1,17 +1,17 @@
-#### Overview
+### Overview
 
 This simple KubeDirectorApplication is based on a community docker image that prints
 
 **Hello from hw-helloworld-http-mf4vz-0** (the actual output is the pod hostname)
 
 
-#### Create KubeDirectorApplication
+### Create KubeDirectorApplication
 
 ```
 kubectl -n your-tenant-namespace apply -f https://raw.githubusercontent.com/hpe-container-platform-community/kubedirector-examples/main/01-hello-world/cr-hello-world.json
 ```
 
-#### Create KubeDirectorCluster
+### Create KubeDirectorCluster
 
 You can instantiate an instance of the Application (i.e. create a KubeDirectorCluster), either:
 
@@ -54,7 +54,7 @@ spec:
 EOF
 ```
 
-#### Access Service Endpoints
+### Access Service Endpoints
 
 Navigate to service endpoints and click the endpoint for the helloworld-http cluster:
 
