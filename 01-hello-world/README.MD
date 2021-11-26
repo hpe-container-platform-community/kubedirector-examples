@@ -68,4 +68,5 @@ You should see an output like:
 
 ### Exercise
 
-Try creating an cluster with more than one node.  Access the service endpoints.  What do you see?
+1. Try creating an cluster with more than one node.  Access the service endpoints.  What do you see?
+2. Navigate to [KubeDirectorApp-Definition](https://github.com/bluek8s/kubedirector/wiki/KubeDirectorApp-Definition) locate and read the description for each attribute in this [application](cr-hello-world.json).
