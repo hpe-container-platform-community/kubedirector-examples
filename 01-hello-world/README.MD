@@ -1,4 +1,10 @@
-### Introduction
+#### Overview
+
+This simple KubeDirectorApplication is based on a community docker image that prints
+
+
+
+
 
 #### Create KubeDirectorApplication
 
@@ -54,4 +60,6 @@ EOF
 Navigate to service endpoints:
 
 ![Access service endpoints](access_service_endpoints.png)
+
+![Print hello world](print_hello_world.png)
 
