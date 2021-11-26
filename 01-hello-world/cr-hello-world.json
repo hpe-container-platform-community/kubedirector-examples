@@ -7,7 +7,7 @@
 
     "spec" : {
         "systemdRequired": true,
-        "defaultEventList" : ["configure", "addnodes", "delnodes"],
+        "defaultEventList" : [],
         "config": {
             "roleServices": [
                 {
