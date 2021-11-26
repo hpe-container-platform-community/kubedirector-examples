@@ -24,6 +24,7 @@
         },
         "distroID": "kubedirector-examples/helloworld-http:0.1",
         "version": "1.8",
+        "configSchemaVersion": 7,
         "services": [
             {
                 "endpoint": {
