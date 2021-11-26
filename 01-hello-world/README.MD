@@ -10,7 +10,7 @@ You can then instantiate an instance of the Application (i.e. create a KubeDirec
 
 - using the ECP UI
 
-![Create KubeDirectorCluster](Screenshot 2021-11-26 at 19.22.06.png)
+![Create KubeDirectorCluster](create_kubedirectorcluster.png)
 
 
 - using kubectl:
