@@ -49,5 +49,9 @@ spec:
 EOF
 ```
 
-#### Access Endpoints
+#### Access Service Endpoints
+
+Navigate to service endpoints:
+
+![Access service endpoints](access_service_endpoints.png)
 
