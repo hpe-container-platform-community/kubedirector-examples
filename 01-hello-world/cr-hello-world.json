@@ -20,8 +20,7 @@
             ]
         },
         "label": {
-            "name": "hello kubernetes",
-            "description": "hello kubernetes services"
+            "name": "hello kubernetes"
         },
         "distroID": "kubedirector-examples/helloworld-http:0.1",
         "version": "1.8",
