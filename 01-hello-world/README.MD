@@ -7,6 +7,8 @@ This simple KubeDirectorApplication is based on a community docker image that pr
 
 ### Create KubeDirectorApplication
 
+Create the KubeDirectorApplication in this folder with:
+
 ```
 kubectl -n your-tenant-namespace apply -f https://raw.githubusercontent.com/hpe-container-platform-community/kubedirector-examples/main/01-hello-world/cr-hello-world.json
 ```
