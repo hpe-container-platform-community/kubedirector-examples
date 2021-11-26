@@ -2,7 +2,9 @@
 
 This simple KubeDirectorApplication is based on a community docker image that prints
 
-**Hello from hw-helloworld-http-mf4vz-0** (the actual output is the pod hostname)
+`Hello from hw-helloworld-http-mf4vz-0`
+
+(the suffix is the pod hostname)
 
 
 ### Create KubeDirectorApplication
