@@ -32,10 +32,7 @@
                     "isDashboard": true,
                     "urlScheme": "http"
                 },
-                "id": "http",
-                "label": {
-                    "name": "HTTP"
-                }
+                "id": "http"
             }
         ],
         "defaultImageRepoTag": "strm/helloworld-http:latest",
