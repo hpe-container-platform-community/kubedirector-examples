@@ -1,0 +1,52 @@
+{
+    "apiVersion": "kubedirector.hpe.com/v1beta1",
+    "kind": "KubeDirectorApp",
+    "metadata": {
+        "name" : "hellok8s-paulbouwer"
+    },
+
+    "spec" : {
+        "systemdRequired": true,
+        "defaultEventList" : ["configure", "addnodes", "delnodes"],
+        "config": {
+            "roleServices": [
+                {
+                    "serviceIDs": [
+                        "http"
+                    ],
+                    "roleID": "hello-kubernetes"
+                }
+            ],
+            "selectedRoles": [
+                "hello-kubernetes"
+            ]
+        },
+        "label": {
+            "name": "hello kubernetes",
+            "description": "hello kubernetes services"
+        },
+        "distroID": "paulbouwer/hello-kubernetes:1.8",
+        "version": "1.8",
+        "configSchemaVersion": 7,
+        "services": [
+            {
+                "endpoint": {
+                    "port": 8080,
+                    "isDashboard": false
+                },
+                "id": "http",
+                "label": {
+                    "name": "HTTP"
+                }
+            }
+        ],
+        "defaultImageRepoTag": "paulbouwer/hello-kubernetes:1.8",
+        "defaultConfigPackage": null,
+        "roles": [
+            {
+                "cardinality": "1+",
+                "id": "hello-kubernetes"
+            }
+        ]
+    }
+}
