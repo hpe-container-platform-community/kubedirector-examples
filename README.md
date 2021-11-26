@@ -4,7 +4,7 @@
 
  - Basic Knowledge of Docker and Dockerfiles
  - Basic Knowledge of Kubectl
- - Basis Understanding of KubeDirector concetps
+ - Basis Understanding of KubeDirector concepts
  - Kubectl Tenant Admin access to an HPE Ezmeral Container Platform environment
 
 ### Examples
