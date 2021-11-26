@@ -40,7 +40,6 @@
             }
         ],
         "defaultImageRepoTag": "strm/helloworld-http:latest",
-        "defaultConfigPackage": null,
         "roles": [
             {
                 "cardinality": "1+",
