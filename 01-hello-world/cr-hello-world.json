@@ -2,7 +2,7 @@
     "apiVersion": "kubedirector.hpe.com/v1beta1",
     "kind": "KubeDirectorApp",
     "metadata": {
-        "name" : "hellok8s-paulbouwer"
+        "name" : "helloworld-http"
     },
 
     "spec" : {
@@ -14,18 +14,18 @@
                     "serviceIDs": [
                         "http"
                     ],
-                    "roleID": "hello-kubernetes"
+                    "roleID": "helloworld-http"
                 }
             ],
             "selectedRoles": [
-                "hello-kubernetes"
+                "helloworld-http"
             ]
         },
         "label": {
             "name": "hello kubernetes",
             "description": "hello kubernetes services"
         },
-        "distroID": "paulbouwer/hello-kubernetes:1.8",
+        "distroID": "kubedirector-examples/helloworld-http:0.1",
         "version": "1.8",
         "configSchemaVersion": 7,
         "services": [
@@ -40,12 +40,12 @@
                 }
             }
         ],
-        "defaultImageRepoTag": "paulbouwer/hello-kubernetes:1.8",
+        "defaultImageRepoTag": "strm/helloworld-http:latest",
         "defaultConfigPackage": null,
         "roles": [
             {
                 "cardinality": "1+",
-                "id": "hello-kubernetes"
+                "id": "helloworld-http"
             }
         ]
     }
