@@ -64,3 +64,6 @@ You should see an output like:
 
 **Hello from hw-helloworld-http-mf4vz-0**
 
+### Exercise
+
+Try creating an cluster with more than one node.  Access the service endpoints.  What do you see?
