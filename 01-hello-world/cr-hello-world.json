@@ -32,7 +32,8 @@
             {
                 "endpoint": {
                     "port": 80,
-                    "isDashboard": true
+                    "isDashboard": true,
+                    "urlScheme": "https"
                 },
                 "id": "http",
                 "label": {
