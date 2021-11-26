@@ -2,8 +2,7 @@
 
 This simple KubeDirectorApplication is based on a community docker image that prints
 
-
-
+**Hello from hw-helloworld-http-mf4vz-0** (the actual output is the pod hostname)
 
 
 #### Create KubeDirectorApplication
@@ -57,9 +56,11 @@ EOF
 
 #### Access Service Endpoints
 
-Navigate to service endpoints:
+Navigate to service endpoints and click the endpoint for the helloworld-http cluster:
 
 ![Access service endpoints](access_service_endpoints.png)
 
-![Print hello world](print_hello_world.png)
+You should see an output like:
+
+**Hello from hw-helloworld-http-mf4vz-0**
 
