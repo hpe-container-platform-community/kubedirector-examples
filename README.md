@@ -1,4 +1,4 @@
-# Kubedirector Examples
+# KubeDirector Examples
 
 ### Pre-requisities
 
