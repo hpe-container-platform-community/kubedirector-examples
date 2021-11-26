@@ -32,7 +32,7 @@
             {
                 "endpoint": {
                     "port": 80,
-                    "isDashboard": false
+                    "isDashboard": true
                 },
                 "id": "http",
                 "label": {
