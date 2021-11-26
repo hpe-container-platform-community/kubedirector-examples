@@ -1,12 +1,14 @@
 ### Introduction
 
-Apply this KubeDirectorApplication with:
+#### Create KubeDirectorApplication
 
 ```
 kubectl -n your-tenant-namespace apply -f https://raw.githubusercontent.com/hpe-container-platform-community/kubedirector-examples/main/01-hello-world/cr-hello-world.json
 ```
 
-You can then instantiate an instance of the Application (i.e. create a KubeDirectorCluster), either:
+#### Create KubeDirectorCluster
+
+You can instantiate an instance of the Application (i.e. create a KubeDirectorCluster), either:
 
 - using the ECP UI
 
@@ -45,3 +47,7 @@ spec:
           memory: "4Gi"
           nvidia.com/gpu: "0"
 EOF
+```
+
+#### Access Endpoints
+
