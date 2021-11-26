@@ -2,8 +2,9 @@
 
 ### Pre-requisities
 
- - `kubectl` Tenant Admin access to a HPE Ezmeral Container Platform environment
- - Knowledge of Docker and Dockerfiles
+ - Basic Knowledge of Docker and Dockerfiles
+ - Basic Knowledge of Kubectl
+ - Kubectl Tenant Admin access to a HPE Ezmeral Container Platform environment
 
 ### Examples
 
