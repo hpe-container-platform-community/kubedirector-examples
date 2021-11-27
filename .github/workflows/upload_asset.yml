@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cd 02-hello-world-config-package/appconfig/
+      - working-directory: 02-hello-world-config-package/appconfig/
       - run: chmod +x startscript
       - run: tar cvzf 02-hello-world-config-package-appconfig.tgz .
 
