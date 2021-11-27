@@ -12,8 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: chmod +x 02-hello-world/appconfig/startscript
-      - run: tar cvzf 02-hello-world-appconfig.tgz 02-hello-world/appconfig/
+      - run: chmod +x 02-hello-world-config-package/appconfig/startscript
+      - run: tar cvzf 02-hello-world-config-package-appconfig.tgz 02-hello-world-config-package/appconfig/
 
       - name: Delete old release assets
         id: delete_release
@@ -45,6 +45,6 @@ jobs:
           # which include a `upload_url`. See this blog post for more info: 
           # https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./02-hello-world-appconfig.tgz
-          asset_name: 02-hello-world-appconfig.tgz
+          asset_path: ./02-hello-world-config-package-appconfig.tgz
+          asset_name: 02-hello-world-config-package-appconfig.tgz
           asset_content_type: application/gzip
