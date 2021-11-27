@@ -34,7 +34,7 @@
                 "id": "http"
             }
         ],
-        "defaultImageRepoTag": "strm/helloworld-http-with-config-package:latest",
+        "defaultImageRepoTag": "strm/helloworld-http:latest",
         "defaultConfigPackage": {
             "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/refs%2Fheads%2Fmain/02-hello-world-config-package-appconfig.tgz"
         },
