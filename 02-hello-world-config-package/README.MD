@@ -11,3 +11,5 @@ This application extends 01-hello-world adding a config package:
 ```
 
 The config package is built and uploaded so that it is available at the above url using using a [github action](https://github.com/hpe-container-platform-community/kubedirector-examples/blob/main/.github/workflows/upload_asset.yml).
+
+The config package can be found in the folder [appconfig](https://github.com/hpe-container-platform-community/kubedirector-examples/tree/main/02-hello-world-config-package/appconfig) in this repository.
