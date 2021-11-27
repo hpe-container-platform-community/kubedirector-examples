@@ -19,7 +19,7 @@
             ]
         },
         "label": {
-            "name": "hello kubernetes"
+            "name": "hello kubernetes (with appconfig)"
         },
         "distroID": "kubedirector-examples/helloworld-http-with-config-package:0.1",
         "version": "1.8",
