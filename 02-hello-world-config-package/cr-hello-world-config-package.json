@@ -2,7 +2,7 @@
     "apiVersion": "kubedirector.hpe.com/v1beta1",
     "kind": "KubeDirectorApp",
     "metadata": {
-        "name" : "helloworld-http"
+        "name" : "helloworld-http-with-config-package"
     },
     "spec" : {
         "config": {
@@ -21,7 +21,7 @@
         "label": {
             "name": "hello kubernetes"
         },
-        "distroID": "kubedirector-examples/helloworld-http:0.1",
+        "distroID": "kubedirector-examples/helloworld-http-with-config-package:0.1",
         "version": "1.8",
         "configSchemaVersion": 7,
         "services": [
@@ -34,7 +34,10 @@
                 "id": "http"
             }
         ],
-        "defaultImageRepoTag": "strm/helloworld-http:latest",
+        "defaultImageRepoTag": "strm/helloworld-http-with-config-package:latest",
+        "defaultConfigPackage": {
+            "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/refs%2Fheads%2Fmain/02-hello-world-config-package-appconfig.tgz"
+        },
         "roles": [
             {
                 "cardinality": "1+",
