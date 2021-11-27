@@ -12,10 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - working-directory: 02-hello-world-config-package/appconfig/
-      - run: chmod +x startscript
-      - run: tar cvzf 02-hello-world-config-package-appconfig.tgz .
-
+      - run: ( cd 02-hello-world-config-package/appconfig/; chmod +x startscript; tar cvzf 02-hello-world-config-package-appconfig.tgz . )
       - name: Delete old release assets
         id: delete_release
         uses: dev-drprasad/delete-older-releases@v0.2.0
