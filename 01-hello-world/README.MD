@@ -21,7 +21,7 @@ You can instantiate an instance of the Application (i.e. create a KubeDirectorCl
 
 - using the ECP UI
 
-![Create KubeDirectorCluster](create_kubedirectorcluster.png)
+![Create KubeDirectorCluster](docs/create_kubedirectorcluster.png)
 
 
 - using kubectl:
@@ -62,7 +62,7 @@ EOF
 
 Navigate to service endpoints and click the endpoint for the helloworld-http cluster:
 
-![Access service endpoints](access_service_endpoints.png)
+![Access service endpoints](docs/access_service_endpoints.png)
 
 You should see an output like:
 
