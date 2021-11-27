@@ -1,0 +1,45 @@
+{
+    "apiVersion": "kubedirector.hpe.com/v1beta1",
+    "kind": "KubeDirectorApp",
+    "metadata": {
+        "name" : "helloworld-http"
+    },
+    "spec" : {
+        "config": {
+            "roleServices": [
+                {
+                    "serviceIDs": [
+                        "http"
+                    ],
+                    "roleID": "helloworld-http"
+                }
+            ],
+            "selectedRoles": [
+                "helloworld-http"
+            ]
+        },
+        "label": {
+            "name": "hello kubernetes"
+        },
+        "distroID": "kubedirector-examples/helloworld-http:0.1",
+        "version": "1.8",
+        "configSchemaVersion": 7,
+        "services": [
+            {
+                "endpoint": {
+                    "port": 80,
+                    "isDashboard": true,
+                    "urlScheme": "http"
+                },
+                "id": "http"
+            }
+        ],
+        "defaultImageRepoTag": "strm/helloworld-http:latest",
+        "roles": [
+            {
+                "cardinality": "1+",
+                "id": "helloworld-http"
+            }
+        ]
+    }
+}

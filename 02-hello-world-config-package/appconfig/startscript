@@ -1,0 +1,12 @@
+set -x
+set -e
+set -o pipefail
+
+if [[ "$1" == "--configure" ]]; then
+  echo "Running startscript with --configure option"
+else
+  echo "ERROR: Unknown command line option(s): '$@'"
+  exit 10
+fi
+
+sed -i s/$(hostname)/$(hostname)-config-package/ /www/index.html
