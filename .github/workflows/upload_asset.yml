@@ -13,9 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create app config
-        run: |
-          chmod +x startscript
-          tar cvzf 02-hello-world-config-package-appconfig.tgz .
+        run: chmod +x startscript; tar cvzf 02-hello-world-config-package-appconfig.tgz .
         working-directory: ./02-hello-world-config-package/appconfig/
       - name: Delete old release assets
         id: delete_release
