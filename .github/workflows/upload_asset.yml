@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create app config
-        run: chmod +x startscript; tar cvzf ../../02-hello-world-config-package-appconfig.tgz .
-        working-directory: ./02-hello-world-config-package/appconfig/
+        run: chmod +x appconfig/startscript; tar cvzf ../02-hello-world-config-package-appconfig.tgz .
+        working-directory: ./02-hello-world-config-package/
       - name: Delete old release assets
         id: delete_release
         uses: dev-drprasad/delete-older-releases@v0.2.0
@@ -34,17 +34,17 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-          
+
       - name: Upload Release Asset
-        id: upload-release-asset 
+        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, 
-          # which include a `upload_url`. See this blog post for more info: 
+          # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object,
+          # which include a `upload_url`. See this blog post for more info:
           # https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          upload_url: ${{ steps.create_release.outputs.upload_url }} 
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./02-hello-world-config-package-appconfig.tgz
           asset_name: 02-hello-world-config-package-appconfig.tgz
           asset_content_type: application/gzip
