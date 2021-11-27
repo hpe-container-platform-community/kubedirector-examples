@@ -44,5 +44,6 @@ Access the service endpoint with a web browser and observe what is displayed.
 ### Exercises
 
 1. Fork this repository.
-2. Modify the startscript to print your name in the output
-3. Deploy and test
+2. Modify the startscript to print your name in the output.
+3. Commit your changes.  You should see the github action building.
+4. Redeploy and test.
