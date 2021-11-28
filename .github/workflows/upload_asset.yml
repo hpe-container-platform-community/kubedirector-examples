@@ -20,7 +20,7 @@ jobs:
         uses: dev-drprasad/delete-older-releases@v0.2.0
         with:
           keep_latest: 0
-          delete_tag_pattern: main # defaults to ""
+          delete_tag_pattern: release # defaults to ""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -30,8 +30,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: release
+          release_name: release
           draft: false
           prerelease: false
 
