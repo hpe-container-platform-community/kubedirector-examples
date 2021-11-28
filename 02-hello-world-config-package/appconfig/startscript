@@ -9,8 +9,6 @@ else
   exit 10
 fi
 
-yum install -y python39
-
 mkdir /www
 cd www
 
