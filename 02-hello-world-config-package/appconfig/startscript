@@ -1,6 +1,4 @@
-set -x
-set -e
-set -o pipefail
+#!/bin/bash
 
 if [[ "$1" == "--configure" ]]; then
   echo "Running startscript with --configure option"
