@@ -14,6 +14,8 @@ The main focus point for this application is the use of a config package:
 
 You can find the config package in the [appconfig](./appconfig) folder in this repo.
 
+The config package is built and uploaded as a release [artifact](ttps://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/refs%2Fheads%2Fmain/02-hello-world-config-package-appconfig.tgz) to this github repo using github [actions](https://github.com/hpe-container-platform-community/kubedirector-examples/blob/main/.github/workflows/upload_asset.yml).
+
 ### Create the KubeDirectorApplication
 
 Refer to [01-hello-world](https://github.com/hpe-container-platform-community/kubedirector-examples/tree/main/01-hello-world) instructions if you need a reminder.
