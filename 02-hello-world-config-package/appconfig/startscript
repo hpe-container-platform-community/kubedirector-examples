@@ -9,6 +9,11 @@ else
   exit 10
 fi
 
-echo '<html><head><title>HTTP Hello World</title></head><body><h1>Hello from '$(hostname)'</h1></body></html' > /www/index.html
+yum install -y python39
 
-python -m SimpleHTTPServer 80
+mkdir /www
+cd www
+
+echo '<html><head><title>HTTP Hello World</title></head><body><h1>Hello from </h1></body></html' > index.html
+
+python3 -m http.server  80
