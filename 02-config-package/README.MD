@@ -7,7 +7,7 @@ The main focus point for this application is the use of a config package:
 ```
 ...
 "defaultConfigPackage": {
-   "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/refs%2Fheads%2Fmain/02-config-package-appconfig.tgz"
+   "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/release/02-config-package-appconfig.tgz"
 },
 ...
 ```
