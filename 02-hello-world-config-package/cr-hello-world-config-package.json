@@ -5,6 +5,7 @@
         "name" : "helloworld-http-with-config-package"
     },
     "spec" : {
+        "systemdRequired": true,
         "config": {
             "roleServices": [
                 {
