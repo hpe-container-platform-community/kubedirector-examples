@@ -37,7 +37,7 @@
         ],
         "defaultImageRepoTag": "bluedata/ubuntu18.04:1.3",
         "defaultConfigPackage": {
-            "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/refs%2Fheads%2Fmain/02-hello-world-config-package-appconfig.tgz"
+            "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/refs%2Fheads%2Fmain/02-config-package-appconfig.tgz"
         },
         "roles": [
             {
