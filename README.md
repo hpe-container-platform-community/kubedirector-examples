@@ -10,4 +10,4 @@
 ### Examples
 
  - [01-hello-world](./01-hello-world) a simple http application that prints hello world
- - [02-hello-world-config-package](./02-hello-world-config-package) extends the first example with application configuration
+ - [02-config-package](./02-config-package) extends the first example with application configuration
