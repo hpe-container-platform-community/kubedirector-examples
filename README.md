@@ -11,3 +11,4 @@
 
  - [01-hello-world](./01-hello-world) a simple http application that prints hello world
  - [02-config-package](./02-config-package) hello world application using a config package
+ - [02-centos-ad-ldap](./02-centos-ad-ldap) centos 7 with automatically configured AD/LDAP
