@@ -16,3 +16,7 @@ spec:
       hpecp-ext-auth-secret
     ]
 ```
+
+### Exercises
+
+1. Try to apply the concepts in this example to Ubuntu `bluedata/ubuntu18x`
