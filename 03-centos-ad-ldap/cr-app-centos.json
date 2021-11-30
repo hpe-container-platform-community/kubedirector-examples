@@ -14,11 +14,11 @@
                     "serviceIDs": [
                         "ssh"
                     ],
-                    "roleID": "vanilla_centos"
+                    "roleID": "vanilla_centos_with_ad_ldap"
                 }
             ],
             "selectedRoles": [
-                "vanilla_centos"
+                "vanilla_centos_with_ad_ldap"
             ]
         },
         "label": {
@@ -42,12 +42,12 @@
         ],
         "defaultImageRepoTag": "bluedata/centos7:latest",
         "defaultConfigPackage": {
-            "packageURL": "https://github.com/snowch/kubedirector-centos-ad-ldap/releases/download/refs%2Fheads%2Fmain/appconfig.tgz"
+            "packageURL": "https://github.com/hpe-container-platform-community/kubedirector-examples/releases/download/release/03-centos-ad-ldap-appconfig.tgz"
         },
         "roles": [
             {
                 "cardinality": "1+",
-                "id": "vanilla_centos"
+                "id": "vanilla_centos_with_ad_ldap"
             }
         ]
     }
