@@ -1,0 +1,54 @@
+{
+    "apiVersion": "kubedirector.hpe.com/v1beta1",
+    "kind": "KubeDirectorApp",
+    "metadata": {
+        "name" : "centos7x-ad-ldap"
+    },
+
+    "spec" : {
+        "systemdRequired": true,
+        "defaultPersistDirs" : ["/home"],
+        "config": {
+            "roleServices": [
+                {
+                    "serviceIDs": [
+                        "ssh"
+                    ],
+                    "roleID": "vanilla_centos"
+                }
+            ],
+            "selectedRoles": [
+                "vanilla_centos"
+            ]
+        },
+        "label": {
+            "name": "CentOS 7.0 with AD/LDAP",
+            "description": "CentOS7.0 with no preinstalled apps"
+        },
+        "distroID": "bluedata/centos7x-ad-ldap",
+        "version": "1.0",
+        "configSchemaVersion": 8,
+        "services": [
+            {
+                "endpoint": {
+                    "port": 22,
+                    "isDashboard": false
+                },
+                "id": "ssh",
+                "label": {
+                    "name": "SSH"
+                }
+            }
+        ],
+        "defaultImageRepoTag": "bluedata/centos7:latest",
+        "defaultConfigPackage": {
+            "packageURL": "https://github.com/snowch/kubedirector-centos-ad-ldap/releases/download/refs%2Fheads%2Fmain/appconfig.tgz"
+        },
+        "roles": [
+            {
+                "cardinality": "1+",
+                "id": "vanilla_centos"
+            }
+        ]
+    }
+}
