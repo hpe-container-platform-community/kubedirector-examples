@@ -1,7 +1,7 @@
 # kubedirector-centos-ad-ldap
 
 ```
-kubectl -n your-ns apply -f https://raw.githubusercontent.com/snowch/kubedirector-centos-ad-ldap/main/cr-app-centos.json
+kubectl -n your-ns apply -f https://raw.githubusercontent.com/hpe-container-platform-community/kubedirector-examples/main/03-centos-ad-ldap/cr-app-centos.json
 ```
 
 - Ensure your tenant has external authentication configured with an AD/LDAP group
